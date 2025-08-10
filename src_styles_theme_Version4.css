@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --mint: #d6f5e3;
+  --blush: #ffe0e9;
+  --lavender: #e6e6fa;
+  --sand: #f5e9da;
+  --taupe: #f0eee9;
+  --glass: rgba(255,255,255,0.65);
+  --font-title: 'Montserrat', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+}
+
+body {
+  font-family: var(--font-title);
+  background: linear-gradient(120deg, var(--mint) 40%, var(--sand) 60%);
+  color: #232323;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+.app-bg-3d {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.blobs-bg .blob {
+  position: absolute;
+  z-index: 0;
+  animation: floatBlobs 6s infinite alternate ease-in-out;
+}
+
+.blob1 { top: 10vh; left: 3vw; width: 120px; }
+.blob2 { bottom: 12vh; right: 6vw; width: 160px; }
+.blob3 { top: 60vh; left: 80vw; width: 90px; }
+/* Add more blobs as needed */
+
+@keyframes floatBlobs {
+  0% { transform: translateY(0px) scale(1);}
+  100% { transform: translateY(-18px) scale(1.08);}
+}
+
+.glassmorphic {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}

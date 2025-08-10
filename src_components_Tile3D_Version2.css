@@ -1,0 +1,57 @@
+.tile-3d {
+  box-shadow: 0 8px 32px rgba(31,38,135,0.12);
+  border-radius: 24px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s cubic-bezier(.21,.67,.66,1.31), box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem 0;
+  user-select: none;
+  outline: none;
+}
+
+.tile-3d:hover, .tile-3d:focus {
+  transform: perspective(600px) rotateY(8deg) scale(1.06);
+  box-shadow: 0 20px 40px 0 rgba(31, 38, 135, 0.23);
+  z-index: 2;
+}
+
+.tile-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0.5rem 0 0 0;
+  letter-spacing: 0.01em;
+}
+
+.tile-emoji {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 4px #fff);
+  margin-bottom: 0.3rem;
+}
+
+.tile-3d-bg-blob img {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 70px;
+  opacity: 0.18;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.tile-3d:hover .tile-3d-bg-blob img {
+  opacity: 0.32;
+}
+
+.tile-mint { background: rgba(214,245,227,0.7); }
+.tile-blush { background: rgba(255,224,233,0.7); }
+.tile-lavender { background: rgba(230,230,250,0.7); }
+.tile-sand { background: rgba(245,233,218,0.7); }
+.tile-taupe { background: rgba(240,238,233,0.7); }

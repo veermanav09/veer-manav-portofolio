@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 62px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 0 2rem;
+  box-shadow: 0 8px 32px rgba(31,38,135,0.08);
+  border-bottom: 1px solid #e6e6fa;
+}
+
+.navbar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: .02em;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar ul li a:hover {
+  background: #d6f5e3;
+  color: #222;
+}

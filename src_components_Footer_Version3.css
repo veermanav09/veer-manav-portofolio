@@ -1,0 +1,12 @@
+.footer {
+  background: rgba(240,238,233,0.8);
+  color: #666;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02em;
+  border-radius: 24px 24px 0 0;
+  margin-top: 3rem;
+  box-shadow: 0 -6px 18px rgba(31,38,135,0.09);
+}
