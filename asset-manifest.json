@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/veer-manav-portfolio/static/css/main.dde07d97.css",
+    "main.js": "/veer-manav-portfolio/static/js/main.92900a7c.js",
+    "index.html": "/veer-manav-portfolio/index.html",
+    "main.dde07d97.css.map": "/veer-manav-portfolio/static/css/main.dde07d97.css.map",
+    "main.92900a7c.js.map": "/veer-manav-portfolio/static/js/main.92900a7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dde07d97.css",
+    "static/js/main.92900a7c.js"
+  ]
+}
